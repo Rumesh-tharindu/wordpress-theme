@@ -13,7 +13,7 @@ function dk_register_style()
     wp_enqueue_style('app');
 
 
-    wp_register_style('nice-select', get_template_directory_uri() . '/client/src/js/libs/jquery-nice-select/css/nice-select.css', [], filemtime(get_template_directory() . '/client/src/js/libs/jquery-nice-select/css/nice-select.css'), false, 'all');
+    wp_register_style('nice-select', get_template_directory_uri() . '/client/js/libs/jquery-nice-select/css/nice-select.css', [], filemtime(get_template_directory() . '/client/js/libs/jquery-nice-select/css/nice-select.css'), false, 'all');
     wp_enqueue_style('nice-select');
 }
 

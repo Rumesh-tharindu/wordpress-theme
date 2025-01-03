@@ -10,17 +10,9 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
-    
-		<?php
-		while ( have_posts() ) :
-			the_post();
+<?php include __DIR__ . '/templates/single/index.php'; ?>
 
-			 
-		endwhile; // End of the loop.
-		?>
 
-	</main><!-- #main -->
 
 <?php
 get_sidebar();

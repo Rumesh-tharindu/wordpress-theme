@@ -18,10 +18,10 @@ function dk_register_script()
 
     // library files
 
-    wp_register_script('nice-select', get_template_directory_uri() . '/client/src/js/libs/jquery-nice-select/js/jquery.nice-select.js', [], filemtime(get_template_directory() . '/client/src/js/libs/jquery-nice-select/js/jquery.nice-select.js'));
+    wp_register_script('nice-select', get_template_directory_uri() . '/client/js/libs/jquery-nice-select/js/jquery.nice-select.js', [], filemtime(get_template_directory() . '/client/js/libs/jquery-nice-select/js/jquery.nice-select.js'));
     wp_enqueue_script('nice-select', 'jquery', false, true);
 
-    wp_register_script('library', get_template_directory_uri() . '/client/src/js/libs/library.js', [], filemtime(get_template_directory() . '/client/src/js/libs/library.js'));
+    wp_register_script('library', get_template_directory_uri() . '/client/js/libs/library.js', [], filemtime(get_template_directory() . '/client/js/libs/library.js'));
     wp_enqueue_script('library', 'jquery', false, true);
 }
 add_action('wp_enqueue_scripts', 'dk_register_script');
